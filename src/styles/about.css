@@ -1,0 +1,209 @@
+/* ================= ABOUT PAGE ================= */
+
+.about-page {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 100px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: radial-gradient(circle at top, #1a2238, #0f111a);
+  color: white;
+}
+
+/* ================= CONTAINER GLOBAL ================= */
+
+.about-container {
+  width: 100%;
+  max-width: 1100px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+  gap: 50px;
+}
+
+/* ================= LEFT SIDE (TIMELINE) ================= */
+
+.about-left {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* SWITCH BUTTONS (AU DESSUS TIMELINE) */
+
+.about-switch {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.switch-buttons {
+  display: flex;
+  gap: 12px;
+
+  padding: 6px;
+  border-radius: 12px;
+}
+
+/* ===== MODERN BUTTON STYLE ===== */
+
+.switch-buttons button {
+
+  position: relative;
+
+  border: 1px solid rgba(0, 207, 255, 0.25);
+  cursor: pointer;
+
+  padding: 10px 18px;
+  border-radius: 10px;
+
+  background: rgba(255,255,255,0.04);
+  color: #e6faff;
+
+  font-weight: 600;
+
+  backdrop-filter: blur(12px);
+
+  transition: all 0.25s ease;
+
+  overflow: hidden;
+}
+
+/* glow */
+.switch-buttons button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background: radial-gradient(
+    circle at center,
+    rgba(0, 207, 255, 0.25),
+    transparent 70%
+  );
+
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* ligne animée */
+.switch-buttons button::after {
+  content: "";
+  position: absolute;
+  left: -100%;
+  top: 0;
+
+  width: 100%;
+  height: 2px;
+
+  background: linear-gradient(90deg, transparent, #00cfff, transparent);
+
+  transition: left 0.5s ease;
+}
+
+/* hover */
+
+.switch-buttons button:hover {
+  transform: translateY(-2px);
+  border-color: #00cfff;
+  box-shadow: 0 8px 20px rgba(0,207,255,0.15);
+}
+
+.switch-buttons button:hover::before {
+  opacity: 1;
+}
+
+.switch-buttons button:hover::after {
+  left: 100%;
+}
+
+/* active */
+
+.switch-buttons button.active {
+  border-color: #00cfff;
+  background: rgba(0,207,255,0.15);
+}
+/* BIO TEXT */
+
+.about-hero-text h1 {
+  font-size: 2.8rem;
+  margin-bottom: 10px;
+}
+
+.about-hero-text p {
+  color: #d6d6d6;
+  line-height: 1.7;
+  margin-bottom: 10px;
+}
+
+.about-hero-text span {
+  color: #00cfff;
+  font-weight: bold;
+}
+
+/* CARD */
+
+.about-hero-card {
+  width: 100%;
+  max-width: 800px; /* plus large = effet horizontal */
+  
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(0, 207, 255, 0.15);
+  border-radius: 18px;
+
+  backdrop-filter: blur(14px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+  margin-left: auto;
+  padding: 15px;
+
+  transition: all 0.3s ease;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* 👈 espace entre paragraphes */
+}
+
+/* hover plus clean */
+.about-hero-card:hover {
+  transform: translateY(-6px);
+  border-color: #00cfff;
+  background: rgba(0, 207, 255, 0.06);
+}
+
+/* TITRE */
+.about-hero-card h2 {
+  color: #00cfff;
+  margin-bottom: 5px;
+  font-size: 1.4rem;
+  letter-spacing: 0.5px;
+}
+
+/* TEXTE PLUS AÉRÉ */
+.about-hero-card p {
+  color: #d6d6d6;
+  line-height: 1.8; /* 👈 plus lisible */
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* EMPHASIS */
+.about-hero-card strong {
+  color: #00cfff;
+}
+
+.about-hero-card:hover {
+  transform: translateY(-4px);
+  background: rgba(0, 207, 255, 0.08);
+}
+
+.about-hero-card h2 {
+  color: #00cfff;
+  margin-bottom: 10px;
+}

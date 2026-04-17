@@ -1,0 +1,187 @@
+
+/* ================= PAGE ================= */
+
+.skills-page {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: radial-gradient(circle at top, #1a2238, #0f111a);
+  padding: 0 20px;
+}
+
+/* ================= HERO ================= */
+
+.skills-hero {
+  text-align: center;
+  max-width: 800px;
+  padding-top: 40px;
+  margin: 0 auto; 
+}
+
+.skills-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.skills-hero p {
+  color: #d6d6d6;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* ================= GRID TABLE ================= */
+
+.skills-grid-table {
+  width: 100%;
+  max-width: 1100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+/* ================= CARD ================= */
+
+.skill-card {
+  background: rgba(255,255,255,0.05);
+  border-radius: 16px;
+  padding: 20px;
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+
+  transition: 0.3s;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skill-card:hover {
+  transform: translateY(-6px);
+  background: rgba(0, 207, 255, 0.08);
+}
+
+/* TOP */
+.skill-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill-top h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.skill-type {
+  font-size: 0.8rem;
+  color: #00cfff;
+}
+
+/* BAR */
+.skill-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(255,255,255,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #00cfff, #00aaff);
+  border-radius: 10px;
+  transition: width 0.5s ease;
+}
+
+/* LEVEL */
+.skill-level {
+  font-size: 0.9rem;
+  color: #aaa;
+  text-align: right;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+  .skills-hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .skills-page {
+    padding: 100px 20px;
+  }
+}
+/* ================= HERO ================= */
+
+.skills-hero {
+  text-align: center;
+  max-width: 800px;
+}
+
+.skills-hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.skills-hero p {
+  color: #d6d6d6;
+  font-size: 1.1rem;
+  line-height: 1.8;
+}
+
+/* ================= SECTIONS ================= */
+
+.skills-section {
+  width: 100%;
+  max-width: 1000px;
+  text-align: center;
+}
+
+.skills-section h2 {
+  font-size: 2rem;
+  margin-bottom: 25px;
+  color: #00cfff;
+}
+
+/* ================= GRID ================= */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 20px;
+}
+
+/* ================= CARD ================= */
+
+.skill-card-modern {
+  background: rgba(255,255,255,0.05);
+  padding: 20px;
+  border-radius: 16px;
+  text-align: center;
+  backdrop-filter: blur(10px);
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.skill-card-modern:hover {
+  transform: translateY(-6px);
+  background: rgba(0, 207, 255, 0.1);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
+.skill-card-modern img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.skill-card-modern span {
+  display: block;
+  font-weight: 600;
+  color: white;
+}
+

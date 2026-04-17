@@ -1,0 +1,40 @@
+
+.contact-section {
+  width: 100%;
+  min-height: 100vh;
+
+  padding-left: 100px;
+
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+
+  text-align: center;
+
+  background: radial-gradient(circle at top, #1a2238, #0f111a);
+  color: white;
+  gap: 20px;
+}
+
+
+.contact-section h2 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+
+
+.contact-section p {
+  color: #d6d6d6;
+  font-size: 1.1rem;
+}
+
+
+.contact-buttons {
+  display: flex;
+  gap: 16px;
+  margin-top: 25px;
+  justify-content: center;
+}
