@@ -14,10 +14,10 @@ export default function Navbar() {
   const [active, setActive] = useState("home");
 
   const links = [
-    { id: "home", icon: <FaHome />, label: "Home" },
-    { id: "about", icon: <FaUser />, label: "About" },
-    { id: "skills", icon: <FaCode />, label: "Skills" },
-    { id: "projects", icon: <FaProjectDiagram />, label: "Projects" },
+    { id: "home", icon: <FaHome />, label: "Accueil" },
+    { id: "about", icon: <FaUser />, label: "A propos" },
+    { id: "skills", icon: <FaCode />, label: "Compétences" },
+    { id: "projects", icon: <FaProjectDiagram />, label: "Projets" },
     { id: "contact", icon: <FaEnvelope />, label: "Contact" }
   ];
 

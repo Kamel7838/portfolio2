@@ -27,17 +27,6 @@ export default function Home() {
               d'applications web modernes.
               Je développe principalement avec <strong>React, JavaScript, PHP et MySQL</strong>.
             </p>
-
-            <div className="hero-buttons">
-              <a href="/Projects" className="btn-primary">
-                Voir mes projets
-              </a>
-
-              <a href="/assets/mon-cv.pdf" target="_blank" className="btn-secondary">
-                Télécharger mon CV
-              </a>
-            </div>
-
           </div>
 
         </div>
